@@ -1,130 +1,191 @@
 /* Reset de estilos */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Establece el margen exterior a 0 */
+  padding: 0; /* Establece el relleno interior a 0 */
+  box-sizing: border-box; /* Utiliza el modelo de caja border-box para incluir el tamaño del borde y el relleno en el ancho y alto totales */
 }
 
 /* Estilos globales */
-body {
-  font-family: Arial, sans-serif;
-  background-image: linear-gradient(to bottom, #00b7ff, #80d7ff);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+/* Estilos del cuerpo */
+body {
+  font-family: Arial, sans-serif; /* Establece la fuente a Arial o una fuente genérica sans-serif */
+  background: linear-gradient(to bottom, #00b7ff, #80d7ff); /* Crea un gradiente de color de arriba hacia abajo como fondo */
+  background-attachment: fixed; /* Fija el fondo para que no se desplace con el contenido */
 }
 
 /* Estilos del encabezado */
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+  background-color: #333; /* Establece el color de fondo a #333 */
+  padding: 10px; /* Establece el espacio de relleno de 10px alrededor del encabezado */
+  color: #fff; /* Establece el color de texto a #fff (blanco) */
+  display: flex; /* Utiliza el modelo de caja flexible para el diseño del encabezado */
+  justify-content: space-between; /* Alinea los elementos en ambos extremos del contenedor */
+  align-items: center; /* Centra verticalmente los elementos */
 }
 
+/* Estilos del logotipo */
+.logo {
+  display: flex; /* Utiliza el modelo de caja flexible para el diseño del logotipo */
+  align-items: center; /* Centra verticalmente los elementos del logotipo */
+}
+
+.logo img {
+  width: 40px; /* Establece el ancho de la imagen del logotipo a 40px */
+  margin-right: 10px; /* Establece un margen derecho de 10px para separar la imagen del texto */
+}
+
+/* Estilos de la barra de navegación */
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  list-style: none; /* Elimina los estilos de lista */
+  display: flex; /* Utiliza el modelo de caja flexible para el diseño de la barra de navegación */
+  margin-top: 10px; /* Establece un margen superior de 10px para separar la barra de navegación del encabezado */
+  justify-content: center; /* Centra los elementos horizontalmente */
 }
 
 nav ul li {
-  margin: 0 10px;
+  margin-left: 10px; /* Establece un margen izquierdo de 10px para separar los elementos de la lista */
 }
 
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
+  color: #fff; /* Establece el color del enlace a #fff (blanco) */
+  text-decoration: none; /* Elimina la decoración de subrayado del enlace */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Aplica una transición suave de 0.3 segundos al cambiar el color de fondo y el color del texto al pasar el mouse por encima */
+  padding: 8px 12px; /* Establece el espacio de relleno de 8px arriba y abajo, y 12px izquierda y derecha */
+  border-radius: 4px; /* Establece un borde redondeado de 4px */
+}
+
+nav ul li a:hover {
+  background-color: #fff; /* Cambia el color de fondo a #fff (blanco) al pasar el mouse por encima del enlace */
+  color: #000; /* Cambia el color del texto a #000 (negro) al pasar el mouse por encima del enlace */
 }
 
 /* Estilos del banner principal */
-#banner {
-  text-align: center;
-  background-image: linear-gradient(to bottom, #00b7ff, #80d7ff);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #fff;
-  padding: 40px 20px;
+.banner-principal {
+  background-image: url('img/banner.jpg'); /* Establece la imagen de fondo del banner */
+  background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el elemento */
+  text-align: center; /* Centra el contenido del banner horizontalmente */
+  padding: 40px 20px; /* Establece el espacio de relleno de 40px arriba y abajo, y 20px izquierda y derecha */
+  color: #000; /* Establece el color de texto a #000 (negro) */
 }
 
-.logo-text {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-#banner img {
-  max-width: 210px; /* Ajusta el tamaño máximo del logotipo según tus necesidades */
-  margin-bottom: 20px;
-}
-
-#banner p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
+/* Estilos del botón */
 .btn {
-  display: inline-block;
-  background-color: #fff;
-  color: #ff6600;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  display: inline-block; /* Muestra el botón como un elemento en línea */
+  background-color: #ccc; /* Establece el color de fondo a #ccc (gris claro) */
+  color: #000; /* Establece el color del texto a #000 (negro) */
+  padding: 10px 20px; /* Establece el espacio de relleno de 10px arriba y abajo, y 20px izquierda y derecha */
+  text-decoration: none; /* Elimina la decoración de subrayado del botón */
+  border-radius: 4px; /* Establece un borde redondeado de 4px */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Aplica una transición suave de 0.3 segundos al cambiar el color de fondo y el color del texto al pasar el mouse por encima */
+  border: 1px solid #000; /* Establece un borde de 1px sólido de color #000 (negro) */
 }
 
 .btn:hover {
-  background-color: #ff9933;
+  background-color: #ffffff; /* Cambia el color de fondo a #ffffff (blanco) al pasar el mouse por encima del botón */
+  color: #ff0000; /* Cambia el color del texto a #ff0000 (rojo) al pasar el mouse por encima del botón */
 }
 
 /* Estilos de la sección de productos */
 #productos {
-  margin-top: 40px;
+  margin-top: 40px; /* Establece un margen superior de 40px para separar la sección de productos del contenido anterior */
 }
 
+/* Estilos del título de la sección de productos */
 #productos h2 {
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px;
+  font-size: 24px; /* Establece el tamaño de fuente a 24px para el título de la sección de productos */
+  text-align: center; /* Centra el título horizontalmente */
+  margin-bottom: 20px; /* Establece un margen inferior de 20px para separar el título de los productos */
 }
 
+/* Estilos de cada producto */
 .producto {
-  background-color: transparent;
-  padding: 20px;
-  border-radius: 4px;
-  margin-bottom: 20px;
-  text-align: center; /* Centra el contenido del producto */
+  padding: 20px; /* Establece el espacio de relleno de 20px alrededor de cada producto */
+  border-radius: 4px; /* Establece un borde redondeado de 4px */
+  margin-bottom: 20px; /* Establece un margen inferior de 20px para separar los productos */
+  text-align: center; /* Centra el contenido del producto horizontalmente */
 }
 
+/* Estilos de la imagen de cada producto */
 .producto img {
-  width: 21%;
-  max-height: 21%;
-  object-fit: cover;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  margin-left: auto; /* Centra la imagen horizontalmente */
-  margin-right: auto; /* Centra la imagen horizontalmente */
+  width: 21%; /* Establece el ancho de la imagen del producto al 21% del contenedor */
+  max-height: 21%; /* Establece la altura máxima de la imagen del producto al 21% del contenedor */
+  object-fit: cover; /* Ajusta la imagen del producto para cubrir todo el espacio disponible */
+  border-radius: 4px; /* Establece un borde redondeado de 4px */
+  margin-bottom: 10px; /* Establece un margen inferior de 10px para separar la imagen del título del producto */
+  margin-left: auto; /* Centra la imagen horizontalmente al establecer el margen izquierdo automáticamente */
+  margin-right: auto; /* Centra la imagen horizontalmente al establecer el margen derecho automáticamente */
 }
 
+/* Estilos del título de cada producto */
 .producto h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 20px; /* Establece el tamaño de fuente a 20px para el título de cada producto */
+  margin-bottom: 10px; /* Establece un margen inferior de 10px para separar el título del párrafo del producto */
 }
 
+/* Estilos del párrafo de cada producto */
 .producto p {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Establece un margen inferior de 10px para separar los párrafos del producto */
 }
 
 /* Estilos del pie de página */
 footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+  background-color: #333; /* Establece el color de fondo a #333 */
+  color: #fff; /* Establece el color de texto a #fff (blanco) */
+  text-align: center; /* Centra el contenido del pie de página horizontalmente */
+  padding: 10px; /* Establece el espacio de relleno de 10px alrededor del pie de página */
+}
+
+/* Estilos de la sección de detalles del producto */
+#detalle-producto {
+  text-align: center; /* Centra el contenido de la sección de detalles del producto horizontalmente */
+  padding: 40px 20px; /* Establece el espacio de relleno de 40px arriba y abajo, y 20px izquierda y derecha */
+  color: #000; /* Establece el color de texto a #000 (negro) */
+}
+
+/* Estilos del contenedor de imagen */
+.image-container {
+  display: flex; /* Utiliza el modelo de caja flexible para el diseño del contenedor de imagen */
+  justify-content: center; /* Centra horizontalmente la imagen dentro del contenedor */
+  margin-bottom: 20px; /* Establece un margen inferior de 20px para separar el contenedor de imagen del contenido siguiente */
+}
+
+/* Estilos de la imagen en la página de detalle */
+#producto-imagen {
+  width: 30%; /* Establece el ancho de la imagen del producto en la página de detalle al 30% del contenedor */
+  max-height: 30%; /* Establece la altura máxima de la imagen del producto en la página de detalle al 30% del contenedor */
+  object-fit: cover; /* Ajusta la imagen del producto en la página de detalle para cubrir todo el espacio disponible */
+  border-radius: 4px; /* Establece un borde redondeado de 4px */
+  margin-bottom: 10px; /* Establece un margen inferior de 10px para separar la imagen del título del producto */
+  margin-left: auto; /* Centra la imagen horizontalmente al establecer el margen izquierdo automáticamente */
+  margin-right: auto; /* Centra la imagen horizontalmente al establecer el margen derecho automáticamente */
+}
+
+/* Estilos del título en la página de detalle */
+#producto-titulo {
+  font-size: 24px; /* Establece el tamaño de fuente a 24px para el título en la página de detalle */
+  margin-bottom: 20px; /* Establece un margen inferior de 20px para separar el título del contenido siguiente */
+}
+
+/* Estilos del precio en la página de detalle */
+#producto-precio {
+  font-size: 18px; /* Establece el tamaño de fuente a 18px para el precio en la página de detalle */
+  margin-bottom: 20px; /* Establece un margen inferior de 20px para separar el precio del contenido siguiente */
+}
+
+/* Estilos del botón en la página de detalle */
+#producto-boton {
+  display: inline-block; /* Muestra el botón como un elemento en línea */
+  background-color: #ccc; /* Establece el color de fondo a #ccc (gris claro) */
+  color: #000; /* Establece el color del texto a #000 (negro) */
+  padding: 10px 20px; /* Establece el espacio de relleno de 10px arriba y abajo, y 20px izquierda y derecha */
+  text-decoration: none; /* Elimina la decoración de subrayado del botón */
+  border-radius: 4px; /* Establece un borde redondeado de 4px */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Aplica una transición suave de 0.3 segundos al cambiar el color de fondo y el color del texto al pasar el mouse por encima */
+  border: 1px solid #000; /* Establece un borde de 1px sólido de color #000 (negro) */
+}
+
+#producto-boton:hover {
+  background-color: #ffffff; /* Cambia el color de fondo a #ffffff (blanco) al pasar el mouse por encima del botón */
+  color: #ff0000; /* Cambia el color del texto a #ff0000 (rojo) al pasar el mouse por encima del botón */
 }

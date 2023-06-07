@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tu página web estilo Mercado Libre</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo CSS personalizado -->
+  <title>Arasaka3D</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <!-- Encabezado -->
   <header>
+    <div class="logo">
+      <img src="img/arasaka.png" alt="Logo de Arasaka3D" width="40px">
+      <span>Arasaka3D</span>
+    </div>
     <nav>
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="web.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Banner principal -->
-<section id="banner">
-    <h1 class="logo-text">Arasaka3D</h1>
-    <img src="file:///D:/Desarrollo_de_Software/2ºdo/Diseño_web/TP1/img/arasaka.png" alt="Logo">
-    <p>Encuentra los mejores productos 3D aquí</p>
-    <a href="#" class="btn">Ver más</a>
-  </section>  
-
-  <!-- Sección de productos -->
-  <section id="productos">
-    <h2>Productos destacados</h2>
-    <div class="producto">
-      <img src="file:///D:/Desarrollo_de_Software/2ºdo/Diseño_web/TP1/img/pochita.jpg" alt="Producto 1">
-      <h3>Nombre del producto</h3>
-      <p>Descripción breve del producto.</p>
-      <a href="#" class="btn">Ver detalles</a>
-    </div>
-    <div class="producto">
-        <img src="file:///D:/Desarrollo_de_Software/2ºdo/Diseño_web/TP1/img/groudon.jpg" alt="Producto 2">
-        <h3>Nombre del producto</h3>
-        <p>Descripción breve del producto.</p>
-        <a href="#" class="btn">Ver detalles</a>
-      </div>
-    <!-- Repite el bloque de código anterior para cada producto -->
+  <section class="banner-principal">
+    <h1 class="banner-titulo">Bienvenido a Arasaka3D</h1>
+    <p class="banner-subtitulo">Tu catálogo online de impresión 3D</p>
   </section>
 
-  <!-- Pie de página -->
+  <section id="productos">
+    <h2>Nuestros productos</h2>
+    <div class="producto">
+      <img src="img/pochita.jpg" alt="Producto 1">
+      <h3>Producto 1</h3>
+      <p>Descripción del Producto 1</p>
+      <a href="detalle.html?id=1" class="btn">Ver producto</a>
+    </div>
+    <div class="producto">
+      <img src="img/groudon.jpg" alt="Producto 2">
+      <h3>Producto 2</h3>
+      <p>Descripción del Producto 2</p>
+      <a href="detalle.html?id=2" class="btn">Ver producto</a>
+    </div>
+  </section>
+
   <footer>
-    <p>Mi emprendimiento 3D &copy; 2023. Todos los derechos reservados.</p>
+    <p>© 2023 Arasaka3D. Todos los derechos reservados.</p>
   </footer>
 </body>
+
 </html>
