@@ -20,7 +20,7 @@ header {
   padding: 10px; /* Establece el espacio de relleno de 10px alrededor del encabezado */
   color: #fff; /* Establece el color de texto a #fff (blanco) */
   display: flex; /* Utiliza el modelo de caja flexible para el diseño del encabezado */
-  justify-content: space-between; /* Alinea los elementos en ambos extremos del contenedor */
+  justify-content:space-evenly; /* Alinea los elementos en el centro de la pagina a la misma distancia */
   align-items: center; /* Centra verticalmente los elementos */
 }
 
