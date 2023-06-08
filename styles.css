@@ -28,10 +28,15 @@ header {
 .logo {
   display: flex; /* Utiliza el modelo de caja flexible para el diseño del logotipo */
   align-items: center; /* Centra verticalmente los elementos del logotipo */
+  color: #ffffff; /* Cambia el color del texto a #ff0000 (rojo) al pasar el mouse por encima del botón */
+}
+
+.logo:hover {
+  color: #ff0000; /* Cambia el color de fondo a #ffffff (blanco) al pasar el mouse por encima del botón */
 }
 
 .logo img {
-  width: 40px; /* Establece el ancho de la imagen del logotipo a 40px */
+  width: 48px; /* Establece el ancho de la imagen del logotipo a 40px */
   margin-right: 10px; /* Establece un margen derecho de 10px para separar la imagen del texto */
 }
 
@@ -67,6 +72,11 @@ nav ul li a:hover {
   text-align: center; /* Centra el contenido del banner horizontalmente */
   padding: 40px 20px; /* Establece el espacio de relleno de 40px arriba y abajo, y 20px izquierda y derecha */
   color: #000; /* Establece el color de texto a #000 (negro) */
+}
+
+/* Estilos del subtitulo del banner */
+.banner-subtitulo {
+  padding: 40px 20px; /* Establece el espacio de relleno de 40px arriba y abajo, y 20px izquierda y derecha */
 }
 
 /* Estilos del botón */
@@ -153,7 +163,7 @@ footer {
 /* Estilos de la imagen en la página de detalle */
 #producto-imagen {
   width: 30%; /* Establece el ancho de la imagen del producto en la página de detalle al 30% del contenedor */
-  max-height: 30%; /* Establece la altura máxima de la imagen del producto en la página de detalle al 30% del contenedor */
+  height: auto; /* Establece la altura máxima de la imagen del producto en la página de detalle al 30% del contenedor */
   object-fit: cover; /* Ajusta la imagen del producto en la página de detalle para cubrir todo el espacio disponible */
   border-radius: 4px; /* Establece un borde redondeado de 4px */
   margin-bottom: 10px; /* Establece un margen inferior de 10px para separar la imagen del título del producto */

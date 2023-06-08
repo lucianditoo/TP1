@@ -8,9 +8,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     // Verifica el valor del parámetro 'id'
     if (productId === '1') {
       // Si el valor es '1', actualiza el nombre, la imagen y la descripción del producto en la página
-      document.getElementById('producto-nombre').textContent = 'Producto 1';
+      document.getElementById('producto-nombre').textContent = 'Pochita';
       document.getElementById('producto-imagen').src = 'img/pochita.jpg';
-      document.getElementById('producto-descripcion').textContent = 'Descripción detallada del Producto 1.';
+      document.getElementById('producto-descripcion').textContent = 'Personaje del anime Chainsawman.';
     } else if (productId === '2') {
       // Si el valor es '2', actualiza el nombre, la imagen y la descripción del producto en la página
       document.getElementById('producto-nombre').textContent = 'Producto 2';
